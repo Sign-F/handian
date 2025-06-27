@@ -1,43 +1,47 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeri - Pesona Bogor</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script> </head>
+    <script defer src="script.js"></script>
+</head>
 <body>
     <div class="container">
 
-        <div class="header">
+        <header class="header">
             <h1>Pesona Bogor</h1>
             <p>Menjelajahi keindahan alam dan budaya Kota Hujan</p>
-        </div>
+        </header>
 
-        <div class="nav">
+        <nav class="nav">
             <a href="index.html">Beranda</a>
             <a href="destinasi.html">Destinasi</a>
-            <a href="galeri.html" class="active">Galeri</a>
+            <a href="galeri.html" aria-current="page">Galeri</a>
             <a href="kontak.html">Kontak</a>
-        </div>
+        </nav>
 
-        <div class="content">
+        <main class="content">
             <h2>Galeri Foto</h2>
-            <div class="gallery">
+            <section class="gallery">
                 <img src="img/f1.jpg" alt="Kebun Raya Bogor">
                 <img src="img/pass.webp" alt="Puncak Pass">
                 <img src="img/foto6.jpg" alt="Curug Nangka">
                 <img src="img/Taman.jpg" alt="Taman Safari">
-            </div>
-        </div>
+                <img src="img/taman-bunga-nusantara.png" alt="Taman bunga">
+                <img src="img/jungleland.jpg" alt="Jungleland">
+            </section>
+        </main>
 
-        <div class="footer">
+        <footer class="footer">
             <p>&copy; 2025 Pesona Bogor.</p>
-        </div>
+        </footer>
 
     </div>
 
     <div id="imageModal" class="modal">
-        <span class="close-button">&times;</span>
+        <span class="close-button" role="button" aria-label="Tutup">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption" class="caption-container"></div>
     </div>

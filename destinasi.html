@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -9,63 +10,77 @@
 <body>
     <div class="container">
 
-        <div class="header">
+        <header class="header">
             <h1>Pesona Bogor</h1>
             <p>Menjelajahi keindahan alam dan budaya Kota Hujan</p>
-        </div>
+        </header>
 
-        <div class="nav">
+        <nav class="nav">
             <a href="index.html">Beranda</a>
-            <a href="destinasi.html" class="active">Destinasi</a>
+            <a href="destinasi.html" aria-current="page">Destinasi</a>
             <a href="galeri.html">Galeri</a>
             <a href="kontak.html">Kontak</a>
-        </div>
+        </nav>
 
-        <div class="content">
-            <div class="main">
+        <main class="content">
+            <section class="main-content">
                 <h2>Destinasi Populer</h2>
                 <div class="card-container">
-                    <a href="kebun-raya-bogor.html">
-                    <div class="card" onclick="highlightCard(this)">
-                        <img src="img/f1.jpg" alt="Kebun Raya Bogor">
-                        <h3>Kebun Raya Bogor</h3>
-                        <p>Taman botani bersejarah yang kaya akan flora tropis dan udara sejuk.</p>
-                    </div>
+                    <a href="kebun-raya-bogor.html" class="card-link">
+                        <div class="card" onclick="highlightCard(this)">
+                            <img src="img/f1.jpg" alt="Kebun Raya Bogor">
+                            <h3>Kebun Raya Bogor</h3>
+                            <p>Taman botani bersejarah yang kaya akan flora tropis dan udara sejuk.</p>
+                        </div>
                     </a>
-                    <a href="puncak-pass.html">
-                    <div class="card" onclick="highlightCard(this)">
-                        <img src="img/pass.webp" alt="Puncak Pass">
-                        <h3>Puncak Pass</h3>
-                        <p>Destinasi favorit dengan pemandangan pegunungan dan perkebunan teh.</p>
-                    </div>
+                    <a href="puncak-pass.html" class="card-link">
+                        <div class="card" onclick="highlightCard(this)">
+                            <img src="img/pass.webp" alt="Puncak Pass">
+                            <h3>Puncak Pass</h3>
+                            <p>Destinasi favorit dengan pemandangan pegunungan dan perkebunan teh.</p>
+                        </div>
                     </a>
-                    <a href="curug-nangka.html">
-                    <div class="card" onclick="highlightCard(this)">
-                        <img src="img/foto6.jpg" alt="Curug Nangka">
-                        <h3>Curug Nangka</h3>
-                        <p>Air terjun alami yang cocok untuk petualangan dan relaksasi.</p>
-                    </div>
+                    <a href="curug-nangka.html" class="card-link">
+                        <div class="card" onclick="highlightCard(this)">
+                            <img src="img/foto6.jpg" alt="Curug Nangka">
+                            <h3>Curug Nangka</h3>
+                            <p>Air terjun alami yang cocok untuk petualangan dan relaksasi.</p>
+                        </div>
                     </a>
-                    <a href="taman-safari.html">
-                    <div class="card" onclick="highlightCard(this)">
-                        <img src="img/Taman.jpg" alt="Taman Safari">
-                        <h3>Taman Safari</h3>
-                        <p>Wisata edukatif untuk keluarga dengan satwa dari berbagai dunia.</p>
-                    </div>
+                    <a href="taman-safari.html" class="card-link">
+                        <div class="card" onclick="highlightCard(this)">
+                            <img src="img/Taman.jpg" alt="Taman Safari">
+                            <h3>Taman Safari</h3>
+                            <p>Wisata edukatif untuk keluarga dengan satwa dari berbagai dunia.</p>
+                        </div>
+                    </a>
+                    <a href="taman-bunga-nusantara.html" class="card-link">
+                        <div class="card" onclick="highlightCard(this)">
+                            <img src="img/taman-bunga-nusantara.png" alt="Taman Bunga Nusantara">
+                            <h3>Taman Bunga Nusantara</h3>
+                            <p>Taman luas dengan koleksi bunga indah dari berbagai negara.</p>
+                        </div>
+                    </a>
+                    <a href="jungleland.html" class="card-link">
+                        <div class="card" onclick="highlightCard(this)">
+                            <img src="img/jungleland.jpg" alt="Jungleland Adventure Theme Park">
+                            <h3>Jungleland Adventure Theme Park</h3>
+                            <p>Taman hiburan terbesar dengan wahana seru untuk segala usia.</p>
+                        </div>
                     </a>
                 </div>
-            </div>
+            </section>
 
-            <div class="sidebar">
+            <aside class="sidebar">
                 <h3>Info Cuaca</h3>
                 <p>🌧 Hujan ringan - 23°C</p>
                 <p>🌿 Suhu sejuk dan cocok untuk liburan!</p>
-            </div>
-        </div>
+            </aside>
+        </main>
 
-        <div class="footer">
-            <p>&copy; 2025 Pesona Bogor.</p>
-        </div>
+        <footer class="footer">
+            <p>© 2025 Pesona Bogor.</p>
+        </footer>
 
     </div>
 </body>

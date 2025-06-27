@@ -25,19 +25,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     images.forEach(image => {
         image.addEventListener('click', function() {
-            modal.style.display = 'flex'; 
+            modal.classList.add('show'); // Tambahkan kelas 'show'
             modalImg.src = this.src;
             captionText.innerHTML = this.alt;
         });
     });
 
     closeButton.addEventListener('click', function() {
-        modal.style.display = 'none';
+        modal.classList.remove('show'); // Hapus kelas 'show'
     });
 
     modal.addEventListener('click', function(event) {
         if (event.target === modal) {
-            modal.style.display = 'none';
+            modal.classList.remove('show'); // Hapus kelas 'show' jika klik di luar gambar
         }
     });
 });

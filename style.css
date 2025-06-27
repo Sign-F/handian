@@ -412,26 +412,3 @@ body {
         padding: 20px;
     }
 }
-
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (height will be 56.25% of its width) */
-    height: 0;
-    overflow: hidden;
-    margin-top: 20px;
-    background: #000; /* Warna latar belakang saat video belum dimuat atau error */
-}
-
-/* Aturan untuk video lokal (dan juga iframe jika masih ada) */
-.video-container iframe,
-.video-container video { /* Tambahkan selector 'video' di sini */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Video akan mengisi lebar container */
-    height: 100%; /* Video akan mengisi tinggi container */
-    object-fit: cover; /* Memastikan video mengisi area tanpa distorsi */
-}
-
-/* ... kode CSS yang sudah ada ... */
